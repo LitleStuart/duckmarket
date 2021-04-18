@@ -3,16 +3,28 @@ body {
     background-color: whitesmoke;
 }
 
+@font-face {
+    font-family: OriginTech;
+    src: url(fonts/OriginTech.ttf);
+}
+
 header {
-    background-color: #2D5557;
+    background: url('files/logo.png') left no-repeat;
+    background-size: contain;
+    background-position: -20px 0;
+    background-color: #366;
     height: 9vh;
     max-height: 100px;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
 }
 
 header p {
+    padding-left: 110px;
     margin: 0;
     color: white;
+    font-family: OriginTech;
+    font-size: 55px;
+    line-height: 9vh;
 }
 
 .content {

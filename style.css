@@ -10,9 +10,6 @@ body {
 
 header {
     display: flex;
-    background: url('files/logo.png') left no-repeat;
-    background-size: contain;
-    background-position: -15px 0;
     background-color: #366;
     height: 9vh;
     max-height: 100px;
@@ -20,10 +17,10 @@ header {
 }
 
 header p {
-    margin: auto 75px;
+    margin: auto -12px;
     color: white;
     font-family: OriginTech;
-    font-size: 55px;
+    font-size: xx-large;
 }
 
 .content {

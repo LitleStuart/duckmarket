@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@sweetalert2/theme-bulma": "^4.0.5",
-    "@sweetalert2/themes": "^4.0.5",
-    "sweetalert2": "^10.16.6"
-  }
-}

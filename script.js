@@ -20,6 +20,6 @@ function cart() {
         text: 'There are ' + countItemsInCart + ' items!',
         confirmButtonColor: '#009688',
         showCancelButton: true,
-        reverseButtons: true
+        confirmButtonText: 'Заказать'
     })
 }

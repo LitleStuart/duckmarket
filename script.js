@@ -1,5 +1,8 @@
 const cartBadge = document.getElementById('cartBadge');
+const drawer = document.getElementById('drawer');
+const container = document.getElementById('container');
 let countItemsInCart = 0;
+let drawerIsActive = 0;
 
 function addedToCart() {
     Swal.fire({
@@ -22,4 +25,12 @@ function cart() {
         showCancelButton: true,
         confirmButtonText: 'Заказать'
     })
+}
+
+function onBodyClick() {
+    if (drawer.classList.contains('is-visible')) {
+        container.classList.add('drawer-is-active')
+    } else {
+        container.classList.remove('drawer-is-active')
+    }
 }

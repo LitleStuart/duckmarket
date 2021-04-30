@@ -12,37 +12,29 @@
     <script src="sweetalert/sweetalert2.js"></script>
 </head>
 
-<body>
-<div class="mdl-layout mdl-js-layout mdl-layout--no-desktop-drawer-button mdl-layout--fixed-header">
+<body onclick="onBodyClick()">
+<div id="container" class="mdl-layout mdl-js-layout mdl-layout--no-desktop-drawer-button mdl-layout--fixed-header mdl-layout--fixed-drawer">
 
 <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
         <span class="mdl-layout-title">DUCKMARKET</span>
         <div class="mdl-layout-spacer"></div>
-        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--icon" onclick="cart()">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--icon" style="margin-right: -15px;" onclick="cart()">
             <i class="material-icons">shopping_cart</i>
         </button>
-        <span id="cartBadge" class="mdl-badge" data-badge="0" style="position: relative; left: -15px; top: -15px"></span>
+        <span id="cartBadge" class="mdl-badge" data-badge="0" style="position: relative; top: -15px"></span>
     </div>
 </header>
 
-<div class="mdl-layout__drawer mdl-layout--small-screen-only">
+<div id="drawer" class="mdl-layout__drawer" style="height: 100%">
     <span class="mdl-layout-title">Категория товаров</span>
     <nav class="mdl-list">
-        <button href="" class="mdl-list__item mdl-button mdl-js-button menu-classes-items" style="background-image: url('files/med.svg'); font-size: 12px;">Лекарства</button>
-        <button href="" class="mdl-list__item mdl-button mdl-js-button menu-classes-items" style="background-image: url('files/products_icon.svg'); font-size: 12px;">Продукты</button>
-        <button href="" class="mdl-list__item mdl-button mdl-js-button menu-classes-items" style="background-image: url('files/med.svg'); font-size: 12px;">Лекарства</button>
-        <button href="" class="mdl-list__item mdl-button mdl-js-button menu-classes-items" style="background-image: url('files/products_icon.svg'); font-size: 12px;">Продукты</button>
+        <button href="" class="mdl-list__item mdl-button mdl-js-button menu-classes-items" style="background-image: url('files/med.svg')">Лекарства</button>
+        <button href="" class="mdl-list__item mdl-button mdl-js-button menu-classes-items" style="background-image: url('files/products_icon.svg')">Продукты</button>
+        <button href="" class="mdl-list__item mdl-button mdl-js-button menu-classes-items" style="background-image: url('files/med.svg')">Лекарства</button>
+        <button href="" class="mdl-list__item mdl-button mdl-js-button menu-classes-items" style="background-image: url('files/products_icon.svg')">Продукты</button>
     </nav>
 </div>
-
-    <nav class="mdl-list mdl-layout--large-screen-only" style="position: absolute; left: 10px; top: 74px; width: 20vw;">
-        <span class="mdl-layout-title" style="margin-bottom: 10px;">Категория товаров</span>
-        <button href="" class="mdl-list__item mdl-button mdl-js-button menu-classes-items" style="background-image: url('files/med.svg')">Лекарства</button>
-        <button href="" class="mdl-list__item mdl-button mdl-js-button menu-classes-items" style="background-image: url('files/products_icon.svg')">Продукты</button>
-        <button href="" class="mdl-list__item mdl-button mdl-js-button menu-classes-items" style="background-image: url('files/med.svg')">Лекарства</button>
-        <button href="" class="mdl-list__item mdl-button mdl-js-button menu-classes-items" style="background-image: url('files/products_icon.svg')">Продукты</button>
-    </nav>
 
 <div class="grid-screen mdl-grid">
     

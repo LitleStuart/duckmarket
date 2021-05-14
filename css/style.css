@@ -24,3 +24,27 @@
 .drawer-is-active {
     overflow: hidden;
 }
+
+.mdl-card img {
+    border: 0;
+}
+
+.mdl-card .mdl-card__media {
+    background-color:rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+.mdl-card h2 {
+    text-align: center;
+    margin: auto;
+    font-size: larger;
+}
+
+.mdl-card h3 {
+    justify-content: center;
+}
+
+.mdl-card button {
+    border: 0;
+    width: 100%;
+}

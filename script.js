@@ -23,7 +23,29 @@ function cart() {
         text: 'There are ' + countItemsInCart + ' items!',
         confirmButtonColor: '#009688',
         showCancelButton: true,
+        showDenyButton: true,
+        cancelButtonText: 'Отмена',
+        denyButtonText: 'Очистить',
         confirmButtonText: 'Заказать'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            swal.fire({
+                titleText: 'Вы оплатили заказ!',
+                icon: 'success',
+                timer: 10000,
+            });
+            countItemsInCart = 0;
+            cartBadge.setAttribute('data-badge', 0);
+        }
+        if (result.isDenied) {
+            swal.fire({
+                titleText: 'Корзина успешно очищена!',
+                icon: 'success',
+                timer: 10000
+            });
+            countItemsInCart = 0;
+            cartBadge.setAttribute('data-badge', 0);
+        }
     })
 }
 
